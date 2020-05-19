@@ -39,8 +39,9 @@ public class TestFile {
                 String s = String.valueOf(x);
                 writer.write(s);
                 writer.newLine();
-                writer.write("Anastasia Ladokha, PI-181");
+
             }
+            writer.write("Anastasia Ladokha, PI-181\n");
             writer.close();
         }
         catch (Exception e){

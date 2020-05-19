@@ -2,10 +2,12 @@ package ua.stu.model;
 
 import ua.stu.test.TestStoreObject;
 
-public class Wood extends TestStoreObject {
+import java.io.Serializable;
+
+public class Wood implements Serializable {
     private int id;
     private String name;
-    transient float density;   //плотность
+    transient float density;
 
     public Wood(int id, String name, float density) {
         this.id = id;
@@ -27,10 +29,6 @@ public class Wood extends TestStoreObject {
 
     @Override
     public String toString() {
-        return "Wood{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", density=" + density +
-                '}';
+        return name;
     }
 }

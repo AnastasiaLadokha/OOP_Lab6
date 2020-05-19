@@ -3,9 +3,10 @@ package ua.stu.store;
 import ua.stu.model.IWeight;
 import ua.stu.test.TestStoreObject;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
-public class ProductStore extends TestStoreObject {
+public class ProductStore implements Serializable {
     private IWeight[] arr = new IWeight[3];
     private int count = 0;
 

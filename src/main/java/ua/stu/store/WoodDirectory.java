@@ -3,9 +3,10 @@ package ua.stu.store;
 import ua.stu.model.Wood;
 import ua.stu.test.TestStoreObject;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
-public class WoodDirectory extends TestStoreObject {
+public class WoodDirectory implements Serializable {
     private Wood[] arr = new Wood[3];
     private int count = 0;
 
